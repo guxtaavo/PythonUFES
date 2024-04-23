@@ -5,3 +5,4 @@
 # str -> tipo string;
 # bool -> tipo verdadeiro ou falso;
 
+print(type(False))
