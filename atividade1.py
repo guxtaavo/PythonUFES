@@ -8,6 +8,7 @@
 # padronizado, misturamos para que você veja que da certo com ambas.
 nome = input('Digite o seu nome: ')
 sobrenome = input("Digite o seu sobrenome: ")
+
 # Você não precisa transformar o dia/mes/ano para int, pois
 # não iremos fazer nenhuma operação aritmética com os dados informados
 # poderia ser tudo padrão str.
