@@ -15,7 +15,6 @@ print(soma)
 x = "Yago"
 print(x)
 
-
 # Só podemos utilizar letras, números e underline nos nomes das variáveis
 idade_yago = 21 # snake_case: todas as letras minúsculas, com as palavras separadas por underline
 
