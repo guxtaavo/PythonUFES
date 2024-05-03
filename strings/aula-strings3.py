@@ -3,3 +3,4 @@
 # Count
 # Find
 # Isalpha / Isnumeric
+# Startswith / Endswith
