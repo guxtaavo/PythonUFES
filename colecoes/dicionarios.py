@@ -7,5 +7,19 @@
 # dicionários.
 # Imutáveis: str, int, float, bool, tuple
 # Mutável: dict, list
+#
 
-# pessoa = {}
+
+# lista = ['Gustavo', 20, 'UFES', 'ES']
+pessoa = {
+    "nome":"Gustavo Nunes",
+    "idade":20,
+    "instituicao":'UFES',
+    "endereco":[
+        'Rua alguma coisa', 'Rua outra coisa'
+    ]
+}
+
+pessoa.pop("nome")
+print(pessoa)
+
