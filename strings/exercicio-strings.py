@@ -8,7 +8,7 @@ emails = emails.split()
 for email in emails:
     if ("@" in email and (email.endswith(".com") or email.endswith(".br"))):
         email = email.split("@")[1]
-        print("Válido", email[email.find("@")+1:email.find(".")])
+        print("Válido", email[:email.find(".")])
     else:
         print("Inválido")
         continue
