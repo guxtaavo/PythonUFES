@@ -20,4 +20,17 @@ pessoa = {
     ]
 }
 
-print(pessoa["endereco"])
+# Método GET -> retorna o valor da chave, pode passar um valor caso não encontre
+print(pessoa.get('nome', 'pode passar algo aqui opcional, por padrão = None'))
+
+# Método KEYS -> retorna as chaves do dict
+print(pessoa.keys())
+
+# Método VALUES -> retorna as valores do dict
+print(pessoa.values())
+
+# Método clear -> Limpa o conteúdo do dict
+pessoa.clear()
+
+# Método items -> Retorna o conjunto de chave e valor do dict em forma de tupla
+print(pessoa.items())

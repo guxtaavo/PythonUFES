@@ -11,11 +11,11 @@ def imprime_msg(x, y, z):
     # As váriaveis dentro da função, só existem dentro dela, e não existem no escopo geral do código, são váriaveis temporarias
     # Só irão existir enquanto o código estiver no escopo da função
 
-
+def imprime_soma_com_return(x, y, z):
+    return x+y+z
     # A função pode retornar algo, que voce armazenaria em alguma variavel ou utilizaria em alguma coisa
     # Ou não precisa retornar nada
     # Pode retornar uma outra função também, dependendo da sua lógica dentro do código
-    # return
 
 n1 = 1
 n2 = 2
@@ -26,3 +26,5 @@ imprime_msg(1, z=n3, y=n2)
 
 #Exemplo de argumentos não nomeados
 imprime_msg(n3, n2, n1)
+
+print(imprime_soma_com_return(1, 2, 3))

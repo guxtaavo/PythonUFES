@@ -45,10 +45,15 @@
 # print(lista)
 
 # COPY - copia os dados da lista para uma nova lista (CRIA UMA NOVA LISTA, NÃO APONTA PARA O MESMO LADO!!!)
-# lista = [1, 2, 3]
-# lista_nova = lista.copy()
-# lista_nova[1] = 10
-# print(lista)
+lista = [1, 2, 3]
+lista_nova = lista.copy()
+lista_nova[1] = 10
+print(lista)
+# Se você igualar a lista, você só vai estar apontando para o mesmo endereço, e não criando uma nova lista. Observe:
+lista = [1, 2, 3]
+lista2 = lista
+lista2[2] = 14 #Estou alterando o valor da lista2, porém vai alterar a lista também, observe no print a seguir:
+print(lista[2])
 
 # COUNT - conta a quantidade de vezes que apareceu na lista
 # lista = [1, 2, 3, 3, 0]
