@@ -5,3 +5,6 @@
 # deactivate
 # pip install nome_da_biblioteca
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+import math, os
+import matplotlib
