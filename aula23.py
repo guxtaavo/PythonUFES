@@ -1,11 +1,11 @@
-# Escopo de váriaveis
+# Escopo de variáveis
 
 # ESCOPO LOCAL
 def funcao():
     idade = 2
     print(idade)
 
-# ESCOPO RAIZ/ GLOBAL 
+# ESCOPO RAIZ/GLOBAL 
 idade = 10
 
 if idade > 10:
