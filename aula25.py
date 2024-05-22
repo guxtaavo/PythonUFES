@@ -12,11 +12,18 @@ plt.plot([1, 4], [1, 16]) # Associação ponto a ponto
 plt.axis((0, 6, 0, 20)) # Intervalo dos eixos
 plt.show()
 
-# Múltiplos gráficos
-grafico1 = [3, 8, 1, 10]
-grafico2 = [6, 2, 7, 11]
+# Múltiplas linhas
+linha1 = [3, 8, 1, 10]
+linha2 = [6, 2, 7, 11]
 
-plt.plot(grafico1)
-plt.plot(grafico2)
+plt.plot(linha1)
+plt.plot(linha2)
+
+# Múltiplos Gráficos
+fig = plt.figure(figsize=[14,7])
+gráfico1 = fig.add_subplot(1,2,1)
+gráfico2 = fig.add_subplot(1,2,2)
+gráfico1.plot(linha1)
+gráfico2.plot(linha2)
 
 plt.show()
