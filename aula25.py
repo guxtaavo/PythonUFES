@@ -12,7 +12,7 @@ plt.plot([1, 4], [1, 16]) # Associação ponto a ponto
 plt.axis((0, 6, 0, 20)) # Intervalo dos eixos
 plt.show()
 
-# Múltiplas linhas
+# Múltiplas Linhas
 linha1 = [3, 8, 1, 10]
 linha2 = [6, 2, 7, 11]
 
