@@ -1,21 +1,19 @@
 # Escopo de variáveis
 
-# ESCOPO LOCAL
-def funcao():
-    idade = 2
-    print(idade)
+# Variável global: é definida fora de qualquer função e pode ser acessada 
+# em qualquer parte do código.
+global_var = "global"
 
-# ESCOPO RAIZ/GLOBAL 
-idade = 10
+def escopo_variavel():
+    # Variável local: é definida dentro de uma função e só pode ser
+    # acessada dentro dessa função.
+    local_var = "local"
+    print(local_var)  # Isso funciona
+    print(global_var)  # Variáveis globais podem ser acessadas dentro de funções
 
-if idade > 10:
-    msg = 'velho'
-else:
-    msg = 'novo'
+# Chamando a função para mostrar o escopo local
+escopo_variavel()
 
-for i in range(2):
-    idade = i
-
-print(msg)
-print(idade)
-funcao()
+# Tentando acessar a variável local fora da função (vai gerar um erro)
+# print(local_var)  # Isso não funciona, pois local_var é local 
+# à função escopo_local
