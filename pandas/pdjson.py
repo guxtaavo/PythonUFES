@@ -1,5 +1,4 @@
 # Lendo arquivo json com o Pandas
-# Pode-se fazer as mesmas coisas com outros tipos de arquivos, como excel
 
 import pandas as pd
 from pathlib import Path
