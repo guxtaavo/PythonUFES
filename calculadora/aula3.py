@@ -1,0 +1,28 @@
+# Aula 3: Criando os botões
+import tkinter as tk
+
+def criar_janela_principal():
+    root = tk.Tk()
+    root.title("Calculadora")
+    root.configure(bg="black")
+
+    # Display
+    global display
+    display = tk.Entry(root, font=("Arial", 24), borderwidth=5, relief="sunken", justify='right', bg="gray", fg="white")
+    display.grid(row=0, column=0, columnspan=4, padx=10, pady=10, sticky="nsew")
+
+    # Botões (layout inicial sem funcionalidade)
+    botoes = [
+        ('7', 2, 0), ('8', 2, 1), ('9', 2, 2), ('/', 2, 3),
+        ('4', 3, 0), ('5', 3, 1), ('6', 3, 2), ('*', 3, 3),
+        ('1', 4, 0), ('2', 4, 1), ('3', 4, 2), ('-', 4, 3),
+        ('0', 5, 0), ('.', 5, 2), ('=', 5, 3), ('+', 4, 3)
+    ]
+
+    for (text, row, col) in botoes:
+        tk.Button(root, text=text, font=("Arial", 18), width=5, height=2).grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
+
+    return root
+
+root = criar_janela_principal()
+root.mainloop()
