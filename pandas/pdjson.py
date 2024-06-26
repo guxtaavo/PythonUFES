@@ -8,7 +8,7 @@ CAMINHO_RAIZ = Path(__file__).parent
 CAMINHO_DATA_JSON = CAMINHO_RAIZ / 'data.json'
 
 df = pd.read_json(CAMINHO_DATA_JSON)
-pd.read_x
+#pd.read_json
 print(df)
 
 # Tratamento de duplicadas
